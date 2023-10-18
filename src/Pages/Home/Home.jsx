@@ -1,8 +1,10 @@
 
+
 const Home = () => {
+    
     return (
-        <div>
-            <h1 className="text-xl">this is home</h1>            
+        <div className="">
+            <h1 className="text-xl dark:text-white">this is home</h1>            
         </div>
     );
 };
