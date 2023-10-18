@@ -8,6 +8,8 @@ import Registration from "../Pages/Registration/Registration";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Products from "../Pages/Products/Products";
 import Details from "../Pages/Details/Details";
+import Update from "../Pages/Update/Update";
+import PrivetRoute from "../PrivetRoute/PrivetRoute";
 
 
 const Routes = createBrowserRouter([
@@ -23,12 +25,12 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/cart",
-                element: <Cart></Cart>,
+                element: <PrivetRoute><Cart></Cart></PrivetRoute>,
                 loader: () => fetch(`http://localhost:5000/fashionsCart`)
             },
             {
                 path: "/addProducts",
-                element:<AddProducts></AddProducts>
+                element:<PrivetRoute><AddProducts></AddProducts></PrivetRoute>
             },
             {
                 path: "/login",
@@ -45,8 +47,13 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/details/:id",
-                element: <Details></Details>,
+                element: <PrivetRoute><Details></Details></PrivetRoute>,
                 loader: () => fetch(`http://localhost:5000/fashions`)
+            },
+            {
+                path: "/update/:id",
+                element: <PrivetRoute><Update></Update></PrivetRoute>,
+                loader: ({params}) => fetch(`http://localhost:5000/fashions/${params.id}`)
             }
         ]
     }

@@ -44,7 +44,7 @@ const Cart = () => {
   }
 
   return (
-    <div className="py-8">
+    <div className="py-8 md:pb-32">
       <h1 className="text-4xl font-semibold rounded-xl border-b-2 border-slate-900 dark:border-green-300 max-w-fit px-2  dark:text-white mx-auto mb-5">
           My Cart
         </h1>

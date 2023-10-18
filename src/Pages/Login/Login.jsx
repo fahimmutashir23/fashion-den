@@ -58,10 +58,10 @@ const Login = () => {
     });
   };
   return (
-    <div className="">
+    <div className="py-6">
       <div
         data-aos="zoom-in"
-        className="mt-20 flex justify-center items-center">
+        className="flex justify-center items-center">
 
         <div className="relative flex flex-col rounded-xl bg-slate-900 dark:bg-yellow-100 bg-clip-border text-white dark:text-slate-900 shadow-md">
           <div className="bg-primary_color rounded-t-xl">

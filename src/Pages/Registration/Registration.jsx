@@ -61,10 +61,10 @@ const Registration = () => {
   };
 
   return (
-    <div>
+    <div className='py-5'>
       <div
         data-aos="zoom-in"
-        className="flex justify-center items-center mt-20">
+        className="flex justify-center items-center">
 
         <div className="relative flex flex-col rounded-xl bg-slate-900 dark:bg-green-300 text-yellow-100 dark:text-slate-900    shadow-md">
           <div className= "rounded-t-xl">

@@ -39,11 +39,11 @@ const Details = () => {
       <h1 className="text-center font-semibold text-2xl dark:text-green-300 mb-5">{details.name}</h1>
       <div>
         <div className="card lg:card-side bg-base-100 dark:bg-gray-800 shadow-xl">
-          <figure>
+          <figure className="w-1/2">
             <img
               src={details.photo}
               alt="Album"
-              className="md:rounded-l-2xl ml-2"
+              className="md:rounded-l-2xl ml-2 max-h-96"
             />
           </figure>
           <div className="card-body">

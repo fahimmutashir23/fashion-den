@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../Components/Navbar/Navbar";
 import { useEffect, useState } from "react";
+import Footer from "../Components/Footer/Footer";
 
 const Layout = () => {
 
@@ -25,6 +26,7 @@ const Layout = () => {
             <div className=" max-w-6xl mx-auto">
             <Outlet></Outlet>            
             </div>
+            <Footer></Footer>
         </div>
 
         </div>
