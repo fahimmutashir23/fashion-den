@@ -1,17 +1,38 @@
 import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { useLoaderData, useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Details = () => {
   const loadedData = useLoaderData();
   const detailsId = useParams();
   const [details, setDetails] = useState([]);
-  console.log(details);
 
   useEffect(() => {
     const findData = loadedData?.find((data) => data._id === detailsId.id);
     setDetails(findData);
   }, [loadedData, detailsId]);
+
+  const handleAddToCart = (product) => {
+    fetch(`http://localhost:5000/fashionsCart`, {
+        method: "POST",
+        headers: {
+            "content-type" : "application/json"
+        },
+        body: JSON.stringify(product)
+    })
+    .then(res => res.json())
+    .then(data => {
+        if(data.insertedId){
+            Swal.fire({
+                title: 'Successful',
+                text: 'You are successfully added My Cart',
+                icon: 'success',
+                confirmButtonText: 'Cool'
+            })
+        }
+    })
+  }
 
   return (
     <div className="py-8">
@@ -46,7 +67,7 @@ const Details = () => {
             </h5>
           </div>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Add to Cart</button>
+              <button onClick={() => handleAddToCart(details)} className="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>

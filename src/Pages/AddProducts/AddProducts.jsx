@@ -12,7 +12,6 @@ const AddProducts = () => {
         const rating = e.target.rating.value;
         const description = e.target.description.value;
         const getValue = {name, brand, type, price, photo, rating, description}
-        console.log(getValue);
 
         fetch("http://localhost:5000/fashions", {
             method: "POST",
@@ -23,7 +22,6 @@ const AddProducts = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
             if(data.insertedId){
                 Swal.fire({
                     title: 'Successful',
