@@ -28,8 +28,8 @@ const Navbar = ({ handleTheme, theme }) => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-yellow-100 dark:bg-slate-900 border-b-2 border-black dark:border-white dark:text-yellow-100">
+    <div className="bg-yellow-100 dark:bg-slate-900 border-b-2 border-black dark:border-white dark:text-yellow-100">
+      <div className="navbar max-w-6xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -19,9 +19,14 @@ const Layout = () => {
     }
 
     return (
-        <div className="bg-green-300 dark:bg-slate-900">
+        <div>
             <Navbar handleTheme={handleTheme} theme = {theme}></Navbar>
+            <div className="bg-green-300 dark:bg-slate-900">
+            <div className=" max-w-6xl mx-auto">
             <Outlet></Outlet>            
+            </div>
+        </div>
+
         </div>
     );
 };
