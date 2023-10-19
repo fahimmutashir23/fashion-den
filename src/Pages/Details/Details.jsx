@@ -9,18 +9,24 @@ const Details = () => {
   const detailsId = useParams();
   const [details, setDetails] = useState([]);
 
+  const cartData = {
+    name: details.name,
+    brand: details.brand,
+    photo: details.photo
+  }
+
   useEffect(() => {
     const findData = loadedData?.find((data) => data._id === detailsId.id);
     setDetails(findData);
   }, [loadedData, detailsId]);
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = () => {
     fetch(`http://localhost:5000/fashionsCart`, {
         method: "POST",
         headers: {
             "content-type" : "application/json"
         },
-        body: JSON.stringify(product)
+        body: JSON.stringify(cartData)
     })
     .then(res => res.json())
     .then(data => {
@@ -69,7 +75,7 @@ const Details = () => {
             </h5>
           </div>
             <div className="card-actions justify-end">
-              <button onClick={() => handleAddToCart(details)} className="btn btn-primary">Add to Cart</button>
+              <button onClick={handleAddToCart} className="btn btn-primary">Add to Cart</button>
             </div>
           </div>
         </div>
