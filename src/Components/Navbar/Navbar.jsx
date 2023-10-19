@@ -73,7 +73,7 @@ const Navbar = ({ handleTheme, theme }) => {
           {user ? (
             <button
               onClick={handleLogOut}
-              className="btn px-5 hover:text-primary_color py-2 border-none bg-slate-900 dark:bg-green-300 rounded-md text-green-300 dark:text-slate-900"
+              className="btn px-5 py-2 border-none bg-slate-900 dark:bg-green-300 rounded-md text-green-300 dark:text-slate-900"
             >
               <div className="space-y-1">
                 <p>Log out</p>
@@ -83,7 +83,7 @@ const Navbar = ({ handleTheme, theme }) => {
           ) : (
             <Link
               to="/login"
-              className="btn px-5 hover:text-primary_color py-2 border-none bg-slate-900 dark:bg-green-300 rounded-md text-green-300 dark:text-slate-900"
+              className="btn px-5 py-2 border-none bg-slate-900 dark:bg-green-300 rounded-md text-green-300 dark:text-slate-900"
             >
               Log in
             </Link>

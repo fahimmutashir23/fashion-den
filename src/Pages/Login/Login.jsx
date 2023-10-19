@@ -13,6 +13,7 @@ const Login = () => {
   const [wrongPassword, setWrongPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
+  
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -21,7 +22,7 @@ const Login = () => {
 
     signInUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        
         if (result.user) {
           return (
             Swal.fire(
@@ -53,8 +54,7 @@ const Login = () => {
         "Log In successful",
         "Thank you to login our website",
         "success"
-      );
-      navigate(location?.state ? location.state : "/");
+      ) && navigate(location?.state? location.state : "/");
     });
   };
   return (

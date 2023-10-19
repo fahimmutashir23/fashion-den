@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 const Update = () => {
 
     const loadedData = useLoaderData();
-    const {_id, name, type, price, photo, rating } = loadedData
+    const {_id, name, type, price, photo, rating, brand } = loadedData
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -48,13 +48,7 @@ const Update = () => {
                         <div className="flex flex-col gap-3 md:w-1/2">
                             <input type="text" name="name" defaultValue={name} placeholder="Product Name" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
                             <select name="brand" className="p-3 rounded-md dark:bg-slate-700 dark:text-white">
-                                <option >Do not change brand</option>
-                                <option value="nike">Nike</option>
-                                <option value="adidas">Adidas</option>
-                                <option value="lotto">Lotto</option>
-                                <option value="puma">Puma</option>
-                                <option value="burberry">Burberry</option>
-                                <option value="armani">Armani</option>
+                                <option value={brand}>{brand}</option>
                             </select>
                             <input type="text" name="type" defaultValue={type} placeholder="Product Type" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
                         </div>
