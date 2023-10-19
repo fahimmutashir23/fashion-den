@@ -12,7 +12,7 @@ const Banner = () => {
       >
         <div className="hero-overlay bg-opacity-20 rounded-lg"></div>
         <div className="">
-          <div className="max-w-4xl mt-56 ml-7 text-2xl">
+          <div className="max-w-sm md:max-w-4xl mt-56 md:ml-7 text-2xl">
             <Marquee style={{backgroundColor: '#FAF3F0', padding: '5px', borderRadius: '5px'}}>
               <p>Elevate Your Style with Fashion Den.</p>
               <p className="mx-5">Discover the Latest Trends and Timeless Classics.</p>
