@@ -25,7 +25,7 @@ const Products = () => {
             }
         </h1>
 
-      <div className="md:grid grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="md:grid grid-cols-2 gap-6">
         {products?.map((product, idx) => (
           <ProductsCard key={idx} product={product}></ProductsCard>
         ))}

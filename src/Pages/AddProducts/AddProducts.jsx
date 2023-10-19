@@ -42,8 +42,8 @@ const AddProducts = () => {
                 <form onSubmit={handleSubmit} className="py-6 px-14">
                     <div className="flex flex-col md:flex-row gap-3">
                         <div className="flex flex-col gap-3 md:w-1/2">
-                            <input type="text" name="name" placeholder="Product Name" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
-                            <select name="brand" className="p-3 rounded-md dark:bg-slate-700 dark:text-white">
+                            <input type="text" required name="name" placeholder="Product Name" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
+                            <select name="brand" required className="p-3 rounded-md dark:bg-slate-700 dark:text-white">
                                 <option >Select Brand</option>
                                 <option value="nike">Nike</option>
                                 <option value="adidas">Adidas</option>
@@ -52,13 +52,13 @@ const AddProducts = () => {
                                 <option value="burberry">Burberry</option>
                                 <option value="armani">Armani</option>
                             </select>
-                            <input type="text" name="type" placeholder="Product Type" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
-                            <input type="text" name="price" placeholder="price $" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
+                            <input type="text" required name="type" placeholder="Product Type" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
+                            <input type="text" required name="price" placeholder="price $" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
                         </div>
                         <div className="flex flex-col gap-3 md:w-1/2">
-                            <input type="text" name="photo" placeholder="Image" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
-                            <input type="text" name="rating" placeholder="rating" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
-                            <textarea name="description" placeholder="Short Description" cols="30" rows="4" className="p-2 rounded-md dark:bg-slate-700 dark:text-white"></textarea>
+                            <input type="text" required name="photo" placeholder="Image" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
+                            <input type="text" required name="rating" placeholder="rating" className="p-3 rounded-md dark:bg-slate-700 dark:text-white"/>
+                            <textarea name="description" required placeholder="Short Description" cols="30" rows="4" className="p-2 rounded-md dark:bg-slate-700 dark:text-white"></textarea>
                         </div>
                     </div>
                     <input type="submit" value="Add Product" className="w-full btn mt-3 dark:bg-slate-700 dark:text-green-300 border-none" />
