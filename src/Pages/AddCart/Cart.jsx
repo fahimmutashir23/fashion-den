@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -45,6 +46,7 @@ const Cart = () => {
 
   return (
     <div className="py-8 md:pb-32">
+      <Helmet><title>Fashion Den | Cart</title></Helmet>
       <h1 className="text-4xl font-semibold rounded-xl border-b-2 border-slate-900 dark:border-green-300 max-w-fit px-2  dark:text-white mx-auto mb-5">
           My Cart
         </h1>
@@ -58,9 +60,9 @@ const Cart = () => {
           <div key={item._id} data-aos="zoom-in" className="overflow-x-hidden">
             <div>
               <div className=" bg-white border-2 border-gray-600 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <div className="h-56 flex items-center justify-center">
+                <div className="mb-4 flex items-center justify-center">
                   <img
-                    className="p-6 rounded-t-lg text-white"
+                    className="p-6 rounded-t-lg h-56"
                     src={item.photo}
                     alt="product image"
                   />

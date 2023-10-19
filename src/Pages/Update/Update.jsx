@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -39,6 +40,7 @@ const Update = () => {
     }
     return (
         <div className="pt-7">
+            <Helmet><title>Fashion Den | Update Product</title></Helmet>
             <h1 className="text-4xl font-semibold rounded-xl border-b-2 border-slate-900 dark:border-green-300 max-w-fit px-2  dark:text-white mx-auto">
           Update Product
             </h1>

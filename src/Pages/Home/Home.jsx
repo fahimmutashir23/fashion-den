@@ -3,11 +3,15 @@ import HomeCard from "../../Components/HomeCard/HomeCard";
 import Banner from "../../Components/Banner/Banner";
 import BecomeAMember from "../../Components/BecomeAMember/BecomeAmember";
 import CustomerReview from "../../Components/CustomerReview/CustomerReview";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const loadedData = useLoaderData();
   return (
     <div>
+      <Helmet>
+        <title>Fashion Den | Home</title>
+      </Helmet>
         <Banner></Banner>
       <div className="pt-10">
         <h1 className="text-4xl font-semibold rounded-xl border-b-2 border-slate-900 dark:border-green-300 max-w-fit px-2  dark:text-white mx-auto">

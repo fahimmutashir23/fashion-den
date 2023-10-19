@@ -14,6 +14,7 @@ import slider_5 from "../../assets/slider_5.jpg"
 import slider_6 from "../../assets/slider_6.jpg"
 import slider_7 from "../../assets/slider_7.jpg"
 import slider_8 from "../../assets/slider_8.jpg"
+import { Helmet } from "react-helmet-async";
 
 const Products = () => {
   const loadedData = useLoaderData();
@@ -30,6 +31,7 @@ const Products = () => {
 
   return (
     <div className="py-8 md:pb-32">
+      <Helmet><title>Fashion Den | Products</title></Helmet>
       <div>
         <Swiper
           modules={[Navigation, A11y, Autoplay]}

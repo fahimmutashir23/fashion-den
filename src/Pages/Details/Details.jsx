@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { AiFillStar } from "react-icons/ai";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -36,6 +37,7 @@ const Details = () => {
 
   return (
     <div className="py-8">
+      <Helmet><title>Fashion Den | Details</title></Helmet>
       <h1 className="text-center font-semibold text-2xl dark:text-green-300 mb-5">{details.name}</h1>
       <div>
         <div className="card lg:card-side bg-base-100 dark:bg-gray-800 shadow-xl">

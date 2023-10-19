@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet-async';
 AOS.init();
 
 const Registration = () => {
@@ -62,6 +63,7 @@ const Registration = () => {
 
   return (
     <div className='py-5'>
+      <Helmet><title>Fashion Den | Registration</title></Helmet>
       <div
         data-aos="zoom-in"
         className="flex justify-center items-center">

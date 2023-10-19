@@ -5,6 +5,7 @@ import Swal from "sweetalert2";
 import { AiFillEye, AiFillEyeInvisible, AiOutlineGoogle } from "react-icons/ai";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Helmet } from "react-helmet-async";
 AOS.init();
 
 const Login = () => {
@@ -59,6 +60,7 @@ const Login = () => {
   };
   return (
     <div className="py-6">
+      <Helmet><title>Fashion Den | Login</title></Helmet>
       <div
         data-aos="zoom-in"
         className="flex justify-center items-center">
