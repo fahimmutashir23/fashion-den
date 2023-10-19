@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import HomeCard from "../../Components/HomeCard/HomeCard";
 import Banner from "../../Components/Banner/Banner";
 import BecomeAMember from "../../Components/BecomeAMember/BecomeAmember";
+import CustomerReview from "../../Components/CustomerReview/CustomerReview";
 
 const Home = () => {
   const loadedData = useLoaderData();
@@ -19,6 +20,7 @@ const Home = () => {
         </div>
       </div>
       <BecomeAMember></BecomeAMember>
+      <CustomerReview></CustomerReview>
     </div>
   );
 };
