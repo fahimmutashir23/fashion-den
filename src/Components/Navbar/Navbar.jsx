@@ -28,7 +28,7 @@ const Navbar = ({ handleTheme, theme }) => {
     </>
   );
   return (
-    <div className="bg-yellow-100 dark:bg-slate-900 border-b-2 border-black dark:border-white dark:text-yellow-100">
+    <div className="bg-[#bbccbd] dark:bg-slate-900 border-b-2 border-black dark:border-white dark:text-yellow-100">
       <div className="navbar max-w-6xl mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
