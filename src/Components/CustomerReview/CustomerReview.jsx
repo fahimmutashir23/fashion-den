@@ -32,18 +32,20 @@ const CustomerReview = () => {
           }}
         >
           {data?.map((oneData) => (
-            <SwiperSlide key={oneData.id} className="p-2">
+            <SwiperSlide key={oneData._id} className="p-2">
               <div className="rounded-2xl relative">
-                <div className="flex flex-col rounded-xl bg-white shadow-md hover:scale-[1.05] transition 1s max-w-min px-4">
-                  <div className="mx-auto mt-2 h-60 w-64 overflow-hidden rounded-xl shadow-lg ">
+
+                <div className="flex flex-col rounded-xl bg-white dark:bg-gray-800 dark:text-green-300 shadow-md hover:scale-[1.05] transition 1s max-w-min px-1">
+
+                  <div className="mx-auto mt-2 h-52 w-64 overflow-hidden rounded-xl shadow-lg ">
                     <img src={oneData?.photo} className="h-60 w-64" />
                   </div>
-                  <div className="p-4 text-center">
+                  <div className="py-2 text-center">
                     <h4 className="mb-2 text-2xl font-semibold ">
                       {oneData?.name}
                     </h4>
-                    <div className=" text-xl font-medium h-14 leading-relaxed antialiased">
-                      <p className="text-base text-card">
+                    <div className=" font-medium h-24">
+                      <p className="text-base px-1">
                         {oneData?.short_review}
                       </p>
                       <div className="flex items-center gap-2">
