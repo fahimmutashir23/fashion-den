@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const ProductsCard = ({ product }) => {
-  const { _id, name, brand, type, price, photo, rating, description } = product;
+  const { _id, name, brand, type, price, photo, rating } = product;
 
   console.log(product);
   return (
@@ -32,12 +32,6 @@ const ProductsCard = ({ product }) => {
             </h5>
             <h5 className="flex items-center text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
               Ratings : <span className="text-slate-900 ml-2">{rating}</span> <AiFillStar></AiFillStar>
-            </h5>
-          </div>
-
-          <div className="h-32">
-            <h5 className=" text-lg font-semibold tracking-tight text-gray-900 dark:text-white">
-              Descriptions : <span className="text-slate-900 ml-2 dark:text-white">{description}</span>
             </h5>
           </div>
 

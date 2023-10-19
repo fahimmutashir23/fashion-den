@@ -32,31 +32,34 @@ const CustomerReview = () => {
           }}
         >
           {data?.map((oneData) => (
-            <SwiperSlide key={oneData._id} className="p-2">
-              <div className="rounded-2xl relative">
-
-                <div className="flex flex-col rounded-xl bg-white dark:bg-gray-800 dark:text-green-300 shadow-md hover:scale-[1.05] transition 1s max-w-min px-1">
-
-                  <div className="mx-auto mt-2 h-52 w-64 overflow-hidden rounded-xl shadow-lg ">
-                    <img src={oneData?.photo} className="h-60 w-64" />
-                  </div>
-                  <div className="py-2 text-center">
-                    <h4 className="mb-2 text-2xl font-semibold ">
-                      {oneData?.name}
-                    </h4>
-                    <div className=" font-medium h-24">
-                      <p className="text-base px-1">
-                        {oneData?.short_review}
-                      </p>
-                      <div className="flex items-center gap-2">
-                        <p className="text-base text-card">
-                          Ratings : {oneData?.ratings}
-                        </p>
-                        <p>
-                          <AiFillStar className="text-yellow-300"></AiFillStar>
-                        </p>
+            <SwiperSlide key={oneData._id} className="">
+              <div className="rounded-2xl">
+                <div className="w-full max-w-md h-40 bg-slate-100 border border-gray-200 rounded-lg shadow sm:p-3 dark:bg-gray-800 dark:border-gray-700">
+                  <div className="flow-root">
+                    <li className="py-3 sm:py-4">
+                      <div className="flex space-x-4">
+                        <div className="">
+                          <img
+                            className="w-10 h-10 rounded-full"
+                            src={oneData?.photo}
+                            alt="Neil image"
+                          />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center text-base font-semibold text-gray-900 dark:text-white">
+                            <p>{oneData?.name}</p>
+                            <p className="ml-2">{oneData?.ratings}</p>
+                            <p>
+                              <AiFillStar className="text-yellow-300"></AiFillStar>
+                            </p>
+                          </div>
+                          <p className="text-sm text-gray-500 dark:text-gray-400">
+                            {oneData?.short_review}
+                          </p>
+                        </div>
+                        <div className="text-gray-900 dark:text-white"></div>
                       </div>
-                    </div>
+                    </li>
                   </div>
                 </div>
               </div>
