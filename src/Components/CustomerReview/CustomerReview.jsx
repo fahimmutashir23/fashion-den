@@ -10,7 +10,9 @@ const CustomerReview = () => {
   const [data, setData] = useState();
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch(
+      "https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/reviews"
+    )
       .then((res) => res.json())
       .then((result) => setData(result));
   }, []);
