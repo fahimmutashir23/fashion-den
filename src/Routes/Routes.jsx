@@ -22,7 +22,7 @@ const Routes = createBrowserRouter([
         element: <Home></Home>,
         loader: () =>
           fetch(
-            `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashionsBrand`
+            `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashionsBrand`
           ),
       },
       {
@@ -34,7 +34,7 @@ const Routes = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashionsCart`
+            `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashionsCart`
           ),
       },
       {
@@ -58,7 +58,7 @@ const Routes = createBrowserRouter([
         element: <Products></Products>,
         loader: () =>
           fetch(
-            `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashions`
+            `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashions`
           ),
       },
       {
@@ -70,7 +70,7 @@ const Routes = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashions`
+            `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashions`
           ),
       },
       {
@@ -82,7 +82,7 @@ const Routes = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashions/${params.id}`
+            `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashions/${params.id}`
           ),
       },
     ],

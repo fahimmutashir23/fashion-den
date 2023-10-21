@@ -6,9 +6,9 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/Provider";
 
 const Cart = () => {
-  const {user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const loadedData = useLoaderData();
-  const filteredData = loadedData.filter(item => item.email === user.email)
+  const filteredData = loadedData.filter((item) => item.email === user.email);
   const [data, setData] = useState(filteredData);
 
   const handleDelete = (id) => {
@@ -24,7 +24,7 @@ const Cart = () => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your product has been deleted.", "success");
         fetch(
-          `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashionsCart/${id}`,
+          `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashionsCart/${id}`,
           {
             method: "DELETE",
           }

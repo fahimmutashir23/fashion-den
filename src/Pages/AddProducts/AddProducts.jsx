@@ -14,7 +14,7 @@ const AddProducts = () => {
     const getValue = { name, brand, type, price, photo, rating, description };
 
     fetch(
-      "https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashions",
+      "https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashions",
       {
         method: "POST",
         headers: {

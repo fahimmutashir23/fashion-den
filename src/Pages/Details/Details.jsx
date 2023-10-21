@@ -10,13 +10,13 @@ const Details = () => {
   const loadedData = useLoaderData();
   const detailsId = useParams();
   const [details, setDetails] = useState([]);
-  const {user} = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
 
   const cartData = {
     name: details.name,
     brand: details.brand,
     photo: details.photo,
-    email: user.email
+    email: user.email,
   };
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Details = () => {
 
   const handleAddToCart = () => {
     fetch(
-      `https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/fashionsCart`,
+      `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashionsCart`,
       {
         method: "POST",
         headers: {

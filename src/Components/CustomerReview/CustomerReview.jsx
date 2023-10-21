@@ -11,7 +11,7 @@ const CustomerReview = () => {
 
   useEffect(() => {
     fetch(
-      "https://fashion-den-server-d5jfcnxyw-fahimmutashir23.vercel.app/reviews"
+      "https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/reviews"
     )
       .then((res) => res.json())
       .then((result) => setData(result));
