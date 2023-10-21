@@ -17,7 +17,7 @@ const Update = () => {
     const getValue = { name, brand, type, price, photo, rating };
 
     fetch(
-      `https://fashion-den-server-q9kscegii-fahimmutashir23.vercel.app/fashions/${_id}`,
+      `https://fashion-den-server-o5dkrww4y-fahimmutashir23.vercel.app/fashions/${_id}`,
       {
         method: "PUT",
         headers: {
