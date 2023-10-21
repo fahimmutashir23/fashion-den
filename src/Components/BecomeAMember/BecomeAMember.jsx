@@ -12,7 +12,7 @@ const BecomeAMember = () => {
         <div className="hero-overlay bg-gradient-to-l from-gray-200 dark:from-slate-800 bg-opacity-60 rounded-lg"></div>
         <div className="">
           <div className="max-w-4xl text-center">
-            <h1 className="dark:text-green-200 font-semibold text-4xl ">
+            <h1 className="dark:text-green-200 font-semibold text-3xl md:text-4xl ">
               BECOME A MEMBER
             </h1>
             <h3 className="dark:text-green-200 font-semibold text-2xl">
@@ -25,7 +25,7 @@ const BecomeAMember = () => {
                     type="email"
                     placeholder="Enter your email"
                     name="email"
-                    className="input ml-24"
+                    className="input ml-10 lg:ml-24"
                   />
                   <span>GO</span>
                 </label>
