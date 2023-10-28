@@ -26,7 +26,7 @@ const Details = () => {
 
   const handleAddToCart = () => {
     fetch(
-      `https://fashion-den-server-o5dkrww4y-fahimmutashir23.vercel.app/fashionsCart`,
+      `https://fashion-den-server-4yc2okkk7-fahimmutashir23.vercel.app/fashionsCart`,
       {
         method: "POST",
         headers: {

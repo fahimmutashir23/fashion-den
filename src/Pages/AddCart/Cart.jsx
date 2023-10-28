@@ -24,7 +24,7 @@ const Cart = () => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your product has been deleted.", "success");
         fetch(
-          `https://fashion-den-server-o5dkrww4y-fahimmutashir23.vercel.app/fashionsCart/${id}`,
+          `https://fashion-den-server-4yc2okkk7-fahimmutashir23.vercel.app/fashionsCart/${id}`,
           {
             method: "DELETE",
           }
